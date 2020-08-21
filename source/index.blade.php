@@ -156,5 +156,4 @@
         document.addEventListener("load", doLoad, false);
       }
     </script>
-    <script src="jrsys-websocket-kits-3.0.2.js"></script>
 @endsection
