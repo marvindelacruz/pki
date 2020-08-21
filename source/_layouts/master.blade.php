@@ -41,8 +41,8 @@
         </footer>
     </section>
 
+    <script src="/assets/jrsys-websocket-kits-3.0.2.js"></script>
     <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
-    <script src="{{ mix('js/jrsys-websocket-kits-3.0.2.js', 'assets/build') }}"></script>
     @includeWhen($page->production, '_partials.analytics')
     @include('_partials.cms.identity_redirect')
 </body>
