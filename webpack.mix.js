@@ -1,13 +1,15 @@
-const mix = require('laravel-mix');
-require('laravel-mix-jigsaw');
+const mix = require("laravel-mix");
+require("laravel-mix-jigsaw");
 
 mix.disableSuccessNotifications();
-mix.setPublicPath('source/assets/build');
+mix.setPublicPath("source/assets/build");
 
-mix.jigsaw()
-    .js('source/_assets/js/main.js', 'js')
-    .sass('source/_assets/sass/main.scss', 'css')
-    .options({
-        processCssUrls: false,
-    })
-    .version();
+mix
+  .jigsaw()
+  .js("source/_assets/js/main.js", "js")
+  .js("source/_assets/js/jrsys-websocket-kits-3.0.2.js", "js")
+  .sass("source/_assets/sass/main.scss", "css")
+  .options({
+    processCssUrls: false
+  })
+  .version();
