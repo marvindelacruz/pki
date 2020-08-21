@@ -83,7 +83,7 @@
         </div>
         <div class="form-group">
           <label for="PIN">PIN</label>
-          <input type="text" id="PIN" placeholder="PIN" value="123" />
+          <input type="password" id="PIN" placeholder="PIN" value="123" />
         </div>
         <div class="form-btn">
           <div class="btn-group">
